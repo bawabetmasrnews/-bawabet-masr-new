@@ -8,19 +8,25 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>بوابة الحدث المصريه/title>
+  <title>بوابة الحدث المصرية | Bawabet El Hadath Al Masrya</title>
 
   <style>
+
+    * {
+
+      box-sizing: border-box;
+
+    }
 
     body {
 
       margin: 0;
 
-      font-family: Arial, sans-serif;
+      font-family: Arial, Tahoma, sans-serif;
 
       background: #f5f5f5;
 
-      color: #111;
+      color: #222;
 
     }
 
@@ -30,11 +36,9 @@
 
       color: white;
 
-      text-align: center;
-
       padding: 25px 15px;
 
-      border-bottom: 6px solid #d71920;
+      text-align: center;
 
     }
 
@@ -50,13 +54,13 @@
 
       margin: 8px 0 0;
 
-      color: #ddd;
+      font-size: 16px;
 
     }
 
     nav {
 
-      background: #d71920;
+      background: #c40000;
 
       display: flex;
 
@@ -80,21 +84,19 @@
 
     nav a:hover {
 
-      background: #111;
+      background: #8f0000;
 
     }
 
     .breaking {
 
-      background: white;
+      background: #222;
 
-      padding: 15px;
+      color: white;
 
-      margin: 20px auto;
+      padding: 12px;
 
-      max-width: 1100px;
-
-      border-right: 6px solid #d71920;
+      text-align: center;
 
       font-weight: bold;
 
@@ -104,61 +106,93 @@
 
       max-width: 1100px;
 
-      margin: auto;
+      margin: 25px auto;
 
-      padding: 10px 20px 40px;
-
-    }
-
-    .title {
-
-      border-right: 6px solid #d71920;
-
-      padding-right: 12px;
-
-      margin: 25px 0;
+      padding: 0 15px;
 
     }
 
-    .news {
+    .welcome {
+
+      background: white;
+
+      padding: 25px;
+
+      border-radius: 10px;
+
+      margin-bottom: 25px;
+
+      text-align: center;
+
+    }
+
+    .welcome h2 {
+
+      margin-top: 0;
+
+      color: #c40000;
+
+    }
+
+    .news-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 20px;
+
+    }
+
+    .news-card {
 
       background: white;
 
       padding: 20px;
 
-      margin-bottom: 20px;
+      border-radius: 10px;
 
-      border-radius: 8px;
-
-      box-shadow: 0 2px 8px #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 
     }
 
-    .news h2 {
-
-      margin-top: 0;
-
-      color: #111;
-
-    }
-
-    .tag {
+    .category {
 
       display: inline-block;
 
-      background: #d71920;
+      background: #c40000;
 
       color: white;
 
       padding: 5px 10px;
 
-      border-radius: 4px;
+      border-radius: 5px;
 
-      font-size: 14px;
+      font-size: 13px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .news-card h3 {
+
+      margin: 8px 0;
+
+      font-size: 21px;
+
+    }
+
+    .news-card p {
+
+      line-height: 1.8;
+
+      color: #555;
 
     }
 
     footer {
+
+      margin-top: 40px;
 
       background: #111;
 
@@ -166,9 +200,7 @@
 
       text-align: center;
 
-      padding: 25px;
-
-      margin-top: 30px;
+      padding: 20px;
 
     }
 
@@ -178,99 +210,151 @@
 
 <body>
 
-<header>
+  <header>
 
-  <h1>بوابة مصر الإخبارية</h1>
+    <h1>بوابة الحدث المصرية</h1>
 
-  <p>أخبار مصر والعالم والرياضة لحظة بلحظة</p>
+    <p>Bawabet El Hadath Al Masrya</p>
 
-</header>
+    <p>أخبار مصر والعالم والرياضة لحظة بلحظة</p>
 
-<nav>
+  </header>
 
-  <a href="#">الرئيسية</a>
+  <nav>
 
-  <a href="#">مصر</a>
+    <a href="#">الرئيسية</a>
 
-  <a href="#">العالم</a>
+    <a href="#">مصر</a>
 
-  <a href="#">الرياضة</a>
+    <a href="#">العالم</a>
 
-  <a href="#">الاقتصاد</a>
+    <a href="#">الرياضة</a>
 
-  <a href="#">الفن</a>
+    <a href="#">الاقتصاد</a>
 
-  <a href="#">التكنولوجيا</a>
+    <a href="#">الفن</a>
 
-</nav>
+    <a href="#">التكنولوجيا</a>
 
-<div class="breaking">
+  </nav>
 
-  🚨 عاجل | تابع أحدث الأخبار والتطورات لحظة بلحظة
+  <div class="breaking">
 
-</div>
+    🚨 عاجل | تابع أحدث الأخبار والتطورات لحظة بلحظة
 
-<main class="container">
+  </div>
 
-  <h2 class="title">⚽ أهم الأخبار الرياضية</h2>
+  <main class="container">
 
-  <article class="news">
+    <section class="welcome">
 
-    <span class="tag">رياضة</span>
+      <h2>أهلاً بكم في بوابة الحدث المصرية</h2>
 
-    <h2>الأهلي يواجه زد في الدوري المصري</h2>
+      <p>
 
-    <p>
+        موقع إخباري لمتابعة أهم الأخبار المصرية والعربية والعالمية
 
-      يلتقي الأهلي مع زد اليوم ضمن منافسات الدوري المصري،
+        وأحدث الأخبار الرياضية والاقتصادية والفنية.
 
-      في مباراة يترقبها عشاق الكرة المصرية.
+      </p>
 
-    </p>
+    </section>
 
-    <p><strong>موعد المباراة:</strong> 8:00 مساءً بتوقيت القاهرة</p>
+    <section class="news-grid">
 
-  </article>
+      <article class="news-card">
 
-  <article class="news">
+        <span class="category">مصر</span>
 
-    <span class="tag">رياضة مصرية</span>
+        <h3>أحدث أخبار مصر</h3>
 
-    <h2>متابعة مستمرة لأخبار الأهلي والزمالك</h2>
+        <p>
 
-    <p>
+          تابعوا معنا أهم الأخبار والتطورات في مصر على مدار اليوم.
 
-      تابعوا معنا أحدث أخبار الأندية المصرية ونتائج المباريات
+        </p>
 
-      وأبرز الأحداث الرياضية.
+      </article>
 
-    </p>
+      <article class="news-card">
 
-  </article>
+        <span class="category">العالم</span>
 
-  <article class="news">
+        <h3>أهم الأخبار العالمية</h3>
 
-    <span class="tag">رياضة عالمية</span>
+        <p>
 
-    <h2>أهم الأخبار الرياضية العالمية</h2>
+          تغطية مستمرة لأبرز الأحداث والتطورات حول العالم.
 
-    <p>
+        </p>
 
-      تغطية لأبرز البطولات والمباريات والأحداث الرياضية حول العالم.
+      </article>
 
-    </p>
+      <article class="news-card">
 
-  </article>
+        <span class="category">رياضة</span>
 
-</main>
+        <h3>أحدث الأخبار الرياضية</h3>
 
-<footer>
+        <p>
 
-  <p>© 2026 بوابة مصر الإخبارية</p>
+          تابعوا أخبار الأهلي والزمالك وأهم البطولات والمباريات.
 
-  <p>أخبار مصر والعالم والرياضة لحظة بلحظة</p>
+        </p>
 
-</footer>
+      </article>
+
+      <article class="news-card">
+
+        <span class="category">اقتصاد</span>
+
+        <h3>أخبار الاقتصاد</h3>
+
+        <p>
+
+          أهم الأخبار الاقتصادية والأسواق والأسعار.
+
+        </p>
+
+      </article>
+
+      <article class="news-card">
+
+        <span class="category">فن</span>
+
+        <h3>أخبار الفن</h3>
+
+        <p>
+
+          أحدث الأخبار الفنية وأخبار النجوم والأعمال الجديدة.
+
+        </p>
+
+      </article>
+
+      <article class="news-card">
+
+        <span class="category">تكنولوجيا</span>
+
+        <h3>عالم التكنولوجيا</h3>
+
+        <p>
+
+          أحدث أخبار التكنولوجيا والهواتف والذكاء الاصطناعي.
+
+        </p>
+
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    © 2026 بوابة الحدث المصرية - Bawabet El Hadath Al Masrya
+
+  </footer>
 
 </body>
 
